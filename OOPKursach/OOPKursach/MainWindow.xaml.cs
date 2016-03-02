@@ -42,7 +42,7 @@ namespace OOPKursach
             
             startButton.IsEnabled = false;
 
-            _timer.Interval = TimeSpan.FromSeconds(0.02);
+            _timer.Interval = TimeSpan.FromSeconds(0.5);
             _timer.Start();
         }
 
@@ -58,12 +58,12 @@ namespace OOPKursach
             bi.EndInit();
             image.Height = size;
             image.Width = size;
-            image.Margin=new Thickness(_random.Next(0,1115),_random.Next(0,660),0,0);
+            image.Margin=new Thickness(_random.Next(0,1115),_random.Next(0,560),0,0);
             image.Source = bi;
 
             image.MouseLeftButtonDown += Image_MouseLeftButtonDown;
             
-            if (++_itemsOnBoard<=1000)
+            if (++_itemsOnBoard<=10)
             {
                 canvas.Children.Add(image);
                 imagesLabel.Content = _itemsOnBoard;
