@@ -77,6 +77,11 @@ namespace OOPKursach
             }
         }
 
+        private void aboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Автор:\nБейлинов Давид\nГруппа: ИКИТ-425");
+        }
+
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             imagesLabel.Content = --_itemsOnBoard;

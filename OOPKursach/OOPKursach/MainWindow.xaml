@@ -15,6 +15,7 @@
             <Label Margin="5" Padding="3">Шаров на экране:</Label>
             <Label Margin="5" Padding="3" Name="imagesLabel"></Label>
 
+            <Button Name="aboutButton" Margin="800,5,800,0" Height="26" Click="aboutButton_Click">Автор</Button>
         </StackPanel>
         <Canvas Grid.Row="1" Name="canvas" Background="Beige">
             
